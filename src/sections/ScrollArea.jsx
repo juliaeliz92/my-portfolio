@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { styled } from '@mui/system';
-
+import { Title, Subtitle, Paragraph, NavBar } from './../components';
+import * as constants from './../utilities/constants'
 
 export default function ScrollArea() {
   const [coordX, setCoordX] = React.useState(null);
@@ -17,8 +18,12 @@ export default function ScrollArea() {
 
   const MyComponent = styled('aside')(({theme}) => ({
     backgroundColor: theme.palette.primary.main,
-    width: '50vw',
     height: '100vh',
+    display:'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '0 150px',
     '&:hover': {
       backgroundImage: `radial-gradient(200px at ${coordX}px ${coordY}px, ${theme.palette.primary.light}, ${theme.palette.primary.main})`
     }
@@ -27,6 +32,20 @@ export default function ScrollArea() {
       coordX={coordX}
       coordY={coordY}
     >
-      Styled div
+      <Title 
+        withShadows
+        title={constants.my_name}
+        styles={{margin: 0}}
+      />
+      <Subtitle 
+        text={constants.designation} 
+        styles={{margin: '5px'}}
+      />
+      <Paragraph
+        textAlign={'justify'}
+      >
+        {constants.description}
+      </Paragraph>
+      <NavBar links={constants.nav_links} />
     </MyComponent>;
 }
