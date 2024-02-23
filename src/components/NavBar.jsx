@@ -62,16 +62,7 @@ export default function NavBar({links, styles, linkStyles}) {
 		value: PropTypes.string,
 	}
 
-    return <MyNavBar 
-			onMouseOverCapture={e => {
-				e.stopPropagation();
-			}}
-			onMouseLeave={e => {		
-				e.preventDefault();
-				e.stopPropagation();
-				console.log(e)
-			}}
-		>
+    return <MyNavBar>
 			<ul>
 			{links.map(link => (
 				<NavLink value={link} key={link} />

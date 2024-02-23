@@ -15,7 +15,7 @@ export default function Title({title, withShadows = false, styles}) {
 		height: 'fit-content',
 		...styles
 	}));
-  return <MyTitle>{title}</MyTitle>;
+  return <MyTitle aria-label={title}>{title}</MyTitle>;
 }
 
 Title.propTypes = {
