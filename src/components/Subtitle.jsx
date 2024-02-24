@@ -8,6 +8,7 @@ export default function Subtitle({text, styles}) {
   const MySubtitle = styled('h2')(({theme}) => ({
     color: theme.palette.secondary.light,
     width: 'fit-content',
+    textAlign: 'center',
     ...styles
   }));
   return <MySubtitle>{text}</MySubtitle>;
