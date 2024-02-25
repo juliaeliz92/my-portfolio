@@ -21,7 +21,7 @@ const ScrollArea = () => {
 		alignItems: 'center',
 		justifyContent: 'center',
 		padding: '0 20%',
-		backgroundColor: theme.palette.primary.main
+		backgroundColor: theme.palette.primary.main,
 	}))
 
 	return <MyComponent>

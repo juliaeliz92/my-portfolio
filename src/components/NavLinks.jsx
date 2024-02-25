@@ -28,7 +28,7 @@ export default function NavLinks({links, linkStyles}) {
             zIndex: -1,
             backgroundColor: theme.palette.secondary.main,
         },
-        '&:hover': {
+        '&:hover, &:active': {
             '&:after': {
                 width: '100%'
             },
@@ -39,7 +39,7 @@ export default function NavLinks({links, linkStyles}) {
     return <ul style={linkStyles}>
 			{links.map(link => (
                 <li key={link}>
-                    <MyNavLink href={link}>{link}</MyNavLink>
+                    <MyNavLink href={`#${link}`}>{link}</MyNavLink>
                 </li>
 			))}
 		</ul>

@@ -9,10 +9,10 @@ function App() {
     <>
       <SpotLightCursor />
       <Grid container>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} sx={{overflow: 'hidden'}}>
           <ScrollArea />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} sx={{overflowY: {md: 'auto'}, height: {md: '100vh'}}}>
           <ContentArea />
         </Grid> 
       </Grid>
