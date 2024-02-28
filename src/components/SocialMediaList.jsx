@@ -10,7 +10,7 @@ export default function SocialMediaList({list, styles}) {
 	}));
 
 	return <MySocialMediaList>
-        {list.map((media, index) => <SocialMediaButton key={index} media={media.media} link={media.link}/>)}
+        {list.map((media, index) => <li key={index}><SocialMediaButton media={media.media} link={media.link}/></li>)}
     </MySocialMediaList>
 }
 

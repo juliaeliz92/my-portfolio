@@ -90,7 +90,8 @@ export default function SpotLightCursor({
     }, [isVisible]);
 
     React.useEffect(() => {
-        const clickable = document.querySelectorAll('a')
+        const clickable = document.querySelectorAll('a', 'section.experience-tile')
+        console.log(clickable)
         clickable.forEach((el) => {
             el.style.cursor = 'none'
 

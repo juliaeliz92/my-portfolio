@@ -46,6 +46,6 @@ export default function NavLinks({links, linkStyles}) {
 }
 
 NavLinks.propTypes = {
-    links: PropTypes.string,
+    links: PropTypes.array,
     linkStyles: PropTypes.object
 }

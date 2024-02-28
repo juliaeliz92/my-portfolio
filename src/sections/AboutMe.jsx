@@ -3,7 +3,7 @@ import { styled } from '@mui/system';
 import * as constants from './../utilities/constants';
 
 const MyAboutMe = styled('section')({
-    height: '100%',
+    height: '100vh',
     display: 'flex',
     flexDirection: 'column',
 })

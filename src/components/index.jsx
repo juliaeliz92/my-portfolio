@@ -6,6 +6,7 @@ import SocialMediaList from "./SocialMediaList";
 import SocialMediaButton from "./SocialMediaButton";
 import SpotLightCursor from "./SpotLightCursor";
 import NavLinks from "./NavLinks";
+import TechPillsContainer from "./TechPills/TechPillsContainer";
 
 export { 
     Subtitle, 
@@ -15,5 +16,6 @@ export {
     SocialMediaList,
     SocialMediaButton, 
     SpotLightCursor, 
-    NavLinks 
+    NavLinks,
+    TechPillsContainer
 }
