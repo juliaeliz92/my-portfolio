@@ -1,0 +1,15 @@
+{
+    "short_name": "React 18 features",
+    "name": "A look on React 18 features",
+    "icons": [
+        {
+            "src": "logo.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}
