@@ -8,7 +8,7 @@ export default function Paragraph({children, textAlign, styles}) {
     textAlign,
     ...styles
   }));
-  return <MyParagraph >{children}</MyParagraph>;
+  return <MyParagraph aria-label='job title description'>{children}</MyParagraph>;
 }
 
 Paragraph.propTypes = {

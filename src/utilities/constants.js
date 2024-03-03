@@ -117,4 +117,14 @@ export const experiences = [
         'Javascript', 'D3', 'Jira', 'AWS', 'Jest', 'NPM', 'Webpack', 'Java', 'Agile', 'Scrum'],
         link: 'https://www.wipro.com/'
     },
+];
+export const projects= [
+    {
+        title: 'React 18 features',
+        description: 'A brief look at React 18 main features and its interactive examples with accessibility features and responsive UI design',
+        publishDate: '4 Feb, 2024',
+        technologies: ['ReactJs', 'HTML5', 'SASS', 'ARIA', 'Bootstrap'],
+        thumbnail: 'https://i.ibb.co/tQBGZ6H/julia-s-react-18-features-thumbnail.png',
+        link: 'https://juliaeliz92.github.io/react-18-features/'
+    }
 ]

@@ -61,7 +61,7 @@ export default function SocialMediaButton({media, link, styles}) {
 		...styles
 	}));
 
-	return <MySocialMediaButton href={link} target="_blank">
+	return <MySocialMediaButton href={link} target="_blank" aria-label={`${media} link`}>
 		<i className={`fab ${icon} icon`} />
 	</MySocialMediaButton>;
 }

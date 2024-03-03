@@ -9,7 +9,7 @@ const MyAboutMe = styled('section')({
 })
 
 export default function AboutMe() {
-    return <MyAboutMe id="about">{constants.about_me.map((about, ind) => 
+    return <MyAboutMe id="about" aria-label='about me!'>{constants.about_me.map((about, ind) => 
         (<p key={ind}>{about}</p>)
     )}</MyAboutMe>
 }

@@ -5,9 +5,9 @@ import ExperienceTile from './ExperienceTile';
 
 export default function Experience() {
     const ExperienceSection = styled('section')({
-
+        marginBottom: '75px'
     })
-    return <ExperienceSection id="experiences">
+    return <ExperienceSection id="experiences" aria-label='list of experience'>
         {constants.experiences.map((experience, ind) => <ExperienceTile experience={experience} key={ind} />)}
     </ExperienceSection>
 }

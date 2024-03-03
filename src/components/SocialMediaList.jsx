@@ -9,7 +9,7 @@ export default function SocialMediaList({list, styles}) {
 		...styles
 	}));
 
-	return <MySocialMediaList>
+	return <MySocialMediaList aria-label='social media list'>
         {list.map((media, index) => <li key={index}><SocialMediaButton media={media.media} link={media.link}/></li>)}
     </MySocialMediaList>
 }

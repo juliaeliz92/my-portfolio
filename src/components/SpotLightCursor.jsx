@@ -8,7 +8,7 @@ export default function SpotLightCursor({
     innerSize = 8,
     outerSize = 8,
     outerScale = 5,
-    innerScale = 0.7
+    innerScale = 0.7,
 }) {
     const cursorOuterRef = React.useRef();
     const cursorInnerRef = React.useRef();
@@ -24,7 +24,7 @@ export default function SpotLightCursor({
     let endX = React.useRef(0);
     let endY = React.useRef(0);
     const { useEventListener } = eventHelpers;
-
+    
     const onMouseMove = React.useCallback(({ clientX, clientY }) => {
         setCoords({ x: clientX, y: clientY });
         endX.current = clientX;
@@ -90,8 +90,7 @@ export default function SpotLightCursor({
     }, [isVisible]);
 
     React.useEffect(() => {
-        const clickable = document.querySelectorAll('a', 'section.experience-tile')
-        console.log(clickable)
+        const clickable = document.querySelectorAll('a');
         clickable.forEach((el) => {
             el.style.cursor = 'none'
 
@@ -135,7 +134,7 @@ export default function SpotLightCursor({
                 })
             })
         }
-    }, [isActive]);
+    }); // eslint-disable-line
 
     const cursorStyles = {
         position: 'fixed',
@@ -178,5 +177,7 @@ SpotLightCursor.propTypes = {
     innerSize: PropTypes.number,
     outerSize: PropTypes.number,
     outerScale: PropTypes.number,
-    innerScale: PropTypes.number
+    innerScale: PropTypes.number,
+    mainRef: PropTypes.object,
+    navLinkRef: PropTypes.object
 }

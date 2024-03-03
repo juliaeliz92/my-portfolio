@@ -2,10 +2,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { styled } from '@mui/system';
 
-
-
-export default function NavLinks({links, linkStyles}) {
-
+const NavLinks = React.forwardRef(function navLinks ({links, linkStyles}, ref) {
     const MyNavLink = styled('a')(({theme}) => ({
         textTransform: 'capitalize',
         textDecoration: 'none',
@@ -28,7 +25,7 @@ export default function NavLinks({links, linkStyles}) {
             zIndex: -1,
             backgroundColor: theme.palette.secondary.main,
         },
-        '&:hover, &:active': {
+        '&:hover, &.active': {
             '&:after': {
                 width: '100%'
             },
@@ -36,16 +33,18 @@ export default function NavLinks({links, linkStyles}) {
         },
     }));
 
-    return <ul style={linkStyles}>
-			{links.map(link => (
-                <li key={link}>
-                    <MyNavLink href={`#${link}`}>{link}</MyNavLink>
-                </li>
-			))}
-		</ul>
-}
+    return <ul style={linkStyles} ref={ref} aria-label='content link'>
+        {links.map(link => (
+            <li key={link}>
+                <MyNavLink href={`#${link}`}>{link}</MyNavLink>
+            </li>
+        ))}
+    </ul>
+});
 
 NavLinks.propTypes = {
     links: PropTypes.array,
     linkStyles: PropTypes.object
 }
+
+export default NavLinks;

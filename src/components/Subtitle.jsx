@@ -11,7 +11,7 @@ export default function Subtitle({text, styles}) {
     textAlign: 'center',
     ...styles
   }));
-  return <MySubtitle>{text}</MySubtitle>;
+  return <MySubtitle aria-label='job title'>{text}</MySubtitle>;
 }
 
 Subtitle.propTypes = {
