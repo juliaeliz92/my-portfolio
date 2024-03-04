@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { styled } from '@mui/system';
+import { Grid } from '@mui/material';
 import PropTypes from 'prop-types';
 import { TechPillsContainer } from '../../components';
 
@@ -34,16 +35,21 @@ export default function ProjectTile({project}) {
         }
     }))
     return <MyProject aria-label='project'>
-        <div className='content-container'>
-            <figure>
-                <img src={project.thumbnail} alt='project thumbnail goes here' width={200} />
-            </figure>   
-            <div className='project-content'>
-                <a href={project.link}>{project.title} <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
-                <p>{project.description}</p>
-                <span>Published on {project.publishDate}</span>
-            </div>
-        </div>
+
+        <Grid className='content-container' container>
+            <Grid sx={12} md={6}>
+                <div>
+                    <img src={project.thumbnail} alt='project thumbnail goes here' width={200} />
+                </div>
+            </Grid> 
+             <Grid sx={12} md={6}>
+                <div className='project-content'>
+                    <a href={project.link}>{project.title} <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <p>{project.description}</p>
+                    <span>Published on {project.publishDate}</span>
+                </div>
+            </Grid>
+        </Grid>
         <div className='tech-pills-container'>
             <TechPillsContainer techStack={project.technologies} />
         </div>
