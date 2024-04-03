@@ -10,6 +10,8 @@ export default function ProjectTile({project}) {
         flexDirection: 'column',
         padding: 10,
         height: 'fit-content',
+        marginBottom: '20px',
+        boxShadow: `${theme.palette.secondary.main} 0px 1px 2px 0px, ${theme.palette.secondary.main} 0px 1px 3px 1px`,
         '.content-container': {
             display: 'flex',
             a: {
@@ -30,9 +32,6 @@ export default function ProjectTile({project}) {
             width: '100%',
             justifyContent: 'center'
         },
-        '&:hover': {
-            boxShadow: `${theme.palette.secondary.main} 0px 1px 2px 0px, ${theme.palette.secondary.main} 0px 1px 3px 1px`
-        }
     }))
     return <MyProject aria-label='project'>
 

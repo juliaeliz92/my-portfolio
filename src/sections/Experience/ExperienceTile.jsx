@@ -6,7 +6,8 @@ import { TechPillsContainer } from '../../components';
 export default function ExperienceTile({experience}) {
     const Tile = styled('section')(({ theme }) => ({
         padding: '10px',
-        marginBottom: '10px',
+        marginBottom: '20px',
+        boxShadow: `${theme.palette.secondary.main} 0px 1px 2px 0px, ${theme.palette.secondary.main} 0px 1px 3px 1px`,
         header: {
             display: 'flex',
             justifyContent: 'space-between',
@@ -34,9 +35,6 @@ export default function ExperienceTile({experience}) {
             fontSize: '16px',
             marginBottom: '10px'
         },
-        '&:hover': {
-            boxShadow: `${theme.palette.secondary.main} 0px 1px 2px 0px, ${theme.palette.secondary.main} 0px 1px 3px 1px`
-        }
     }))
 
     return <Tile aria-label='experience'>

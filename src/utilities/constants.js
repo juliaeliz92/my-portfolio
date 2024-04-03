@@ -126,5 +126,13 @@ export const projects= [
         technologies: ['ReactJs', 'HTML5', 'SASS', 'ARIA', 'Bootstrap'],
         thumbnail: 'https://i.ibb.co/tQBGZ6H/julia-s-react-18-features-thumbnail.png',
         link: 'https://juliaeliz92.github.io/react-18-features/'
+    }, 
+    {
+        title: 'Frontend Mentor Challenges',
+        description: 'A list of challenge solutions along with the walkthrough videos provided by frontendmentor.io',
+        publishDate: '11 March, 2024',
+        technologies: ['ReactJs', 'HTML5', 'SASS', 'Chakra UI'],
+        thumbnail: 'https://i.ibb.co/Pr7mkfr/mentor-tasks-thumbnail.png',
+        link: 'https://juliaeliz92.github.io/mentor-frontend-tasks/'
     }
 ]
