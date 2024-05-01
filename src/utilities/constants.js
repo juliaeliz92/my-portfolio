@@ -134,5 +134,13 @@ export const projects= [
         technologies: ['ReactJs', 'HTML5', 'SASS', 'Chakra UI'],
         thumbnail: 'https://i.ibb.co/Pr7mkfr/mentor-tasks-thumbnail.png',
         link: 'https://juliaeliz92.github.io/mentor-frontend-tasks/'
+    },
+    {
+        title: 'Space Travel',
+        description: 'Cool website using Next.js on Space Travel, the technology used and the amazing crew',
+        publishDate: '28 April, 2024',
+        technologies: ['Next.js', 'HTML5', 'Tailwind CSS'],
+        thumbnail: 'https://i.ibb.co/YZRxK3G/space-travel.png',
+        link: 'https://space-tourism-lyart-one.vercel.app/'
     }
 ]
