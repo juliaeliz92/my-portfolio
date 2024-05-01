@@ -5,7 +5,7 @@ import * as constants from './../../utilities/constants';
 
 export default function Projects() {
     const MyProjects = styled('section')({
-        marginBottom: '75px',
+        marginBottom: '100px',
         height: '100vh',
         padding: 30,
         display: 'flex',
